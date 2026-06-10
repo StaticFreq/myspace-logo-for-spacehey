@@ -1,0 +1,18 @@
+﻿{
+  "manifest_version": 3,
+  "name": "SpaceHey MySpace Logo",
+  "version": "1.0",
+  "description": "Replaces SpaceHey logo with classic MySpace logo",
+  "content_scripts": [
+    {
+      "matches": ["*://*.spacehey.com/*"],
+      "css": ["style.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["logo.svg"],
+      "matches": ["*://*.spacehey.com/*"]
+    }
+  ]
+}
